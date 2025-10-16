@@ -1,5 +1,60 @@
 body {
   margin: 0;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+#game-container {
+  padding: 16px;
+}
+
+#start-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 2;
+}
+
+#start-screen.hidden {
+  display: none;
+}
+
+h3 {
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.controls button,
+#start-screen button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.controls button:hover,
+#start-screen button:hover {
+  background-color: #43a047;
+}
+
+.controls button:focus,
+#start-screen button:focus {
+  outline: 2px solid #1b5e20;
+  outline-offset: 2px;
 }
 
 .grid {
